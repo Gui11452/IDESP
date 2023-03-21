@@ -18,8 +18,9 @@ document.addEventListener('click', e => {
     const el = e.target;
 
     if(el == a1 || el == a2 || el == a3 || el == a4
-        || el == a6|| el == a7|| el == a8|| el == a9|| el == a10){
+        || el == a6|| el == a7|| el == a8|| el == a9){
         e.preventDefault();
+        console.log(a5, a6, a7, a8, a9, a10)
         const atributoHref = el.getAttribute('href');
         const to = document.querySelector(atributoHref).offsetTop;
 
