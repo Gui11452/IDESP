@@ -11,14 +11,14 @@ const [spanOculto1, spanOculto2, spanOculto3] = botaoOcultoSpan;
 const cabecalhoOculto = document.querySelector('.cabecalho-oculto');
 
 const cabecalhoOcultoA = document.querySelectorAll('.cabecalho-oculto a');
-const [a5, a6, a7, a8, a9, a10] = cabecalhoOcultoA;
+const [a5, a6] = cabecalhoOcultoA;
 
 document.addEventListener('click', e => {
 
     const el = e.target;
     
-    if(el == a1 || el == a2 || el == a3 || el == a4
-        || el == a6|| el == a7|| el == a8|| el == a9){
+    if(el == a1 || el == a2 || el == a3 || el == a4 || 
+        el == a5 || el == a6){
         e.preventDefault();
         
         const atributoHref = el.getAttribute('href');
